@@ -1,0 +1,51 @@
+ublic class Proyecto4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Humanos p1=new Humanos();
+        
+        Marcas a1=new Marcas();
+        
+        Materialss m1=new Materialss();
+        
+        p1.morir();
+        a1.morir();
+        m1.morir();
+        p1=null;
+        a1=null;
+        m1=null;
+    }
+    
+}
+public class Humanos {
+    public Humanos(){
+        luchar();
+    }
+    public void finalize(){
+    
+    }
+    
+    private void luchar(){
+        System.out.println("Estoy luchando");
+    }
+    public void Sobrevivir(){
+            System.out.println("Sigo vivo");
+    }
+    public void Enorgullecer(){
+        System.out.println("SIUUUUU");
+    }
+    public void morir(){
+        System.out.println("Morir");
+    }
+}
+public class Materialss extends Humanos {
+    
+}
+public class Marcas extends Humanos{
+    public void morir(){
+        System.out.println("Haré la murición");
+    }
+    
+}
