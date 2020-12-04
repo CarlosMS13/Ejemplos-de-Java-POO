@@ -1,0 +1,38 @@
+package proyect3;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author fenix
+ */
+public class Proyect3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        ArrayList TEST = new ArrayList(); 
+ 
+        // Tamaño de arrayList  
+        System.out.println("BIENVENIDOS:");
+ 
+        // Permite agregarle algunos elementos  
+        TEST.add("1.CLASE"); 
+        TEST.add("2.PROGRA"); 
+        TEST.add("3.CARLOS"); 
+        TEST.add("4.MAYORGA");  
+ 
+        
+        System.out.println("Es un ejemploclaro:" + TEST.size());  
+ 
+        System.out.println("PODEMOS VERLO:" + TEST);  
+ 
+        
+        System.out.println("ADIOS");  
+ 
+     
+    }
+
+    }
+    
