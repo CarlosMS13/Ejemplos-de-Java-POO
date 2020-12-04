@@ -1,0 +1,48 @@
+package proyecto1;
+
+/**
+ *
+ * @author fenix
+ */
+public class Proyecto1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Mazda n1=new Mazda();
+        n1.encender();
+        Mercedez n2=new Mercedez();
+        n2.apagar();
+        Honda c1=new Honda();
+        c1.encender();
+    }
+    
+}
+
+public class Carro {
+    public void encender(){
+        System.out.println("Encender");
+    }
+    public void apagar(){
+        System.out.println("Apagar");
+    }
+}
+
+public class Mercedez extends Carro{
+    public Mercedez(){
+        System.out.println("Cree carro Mercedez");
+    }
+}
+public class Mazda extends Carro {
+     public Mazda(){
+        System.out.println("Cree carro Mazda");
+    }
+}
+
+public class Honda extends Carro{
+    public Honda(){
+        System.out.println("Cree carro Honda");
+    }
+    
+}
