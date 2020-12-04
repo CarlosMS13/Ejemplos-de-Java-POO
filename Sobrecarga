@@ -1,0 +1,32 @@
+package proyecto5;
+
+/**
+ *
+ * @author fenix
+ */
+public class Proyecto5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Area oa1=new Area();
+
+        System.out.println(oa1.rectangulo(3, 6));
+        System.out.println(oa1.paralelogramo(3, 6));
+        System.out.println(oa1.rombo(3, 6));
+        
+    }
+    
+}
+public class Area {
+    public int rectangulo(int a,int b){
+        return a*b;
+    }
+    public int rombo(int a,int b){
+        return a*b/2;
+    }
+    public float paralelogramo(int a,int b){
+        return a*b;
+   }
+}
