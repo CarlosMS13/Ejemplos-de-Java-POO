@@ -1,0 +1,60 @@
+package proyectoo2;
+
+/**
+ *
+ * @author fenix
+ */
+public class Proyectoo2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Moto m= new Moto();
+        Carro c= new Carro();
+        
+        m.apagar();
+        c.apagar();
+        m.correr();
+        c.correr();
+        m.encender();
+        c.encender();
+        
+    }
+    
+}
+public interface Rueda {
+    
+    public void encender();
+    public void correr();
+    public void apagar();
+}
+public class Carro implements Rueda{
+    public Carro(){
+        
+    }
+    public void encender(){
+        System.out.println("Hola soy un carro, voy a encender");
+    }
+    public void correr(){
+        System.out.println("Hola soy un carro, voy a correr");
+    }
+    public void apagar(){
+        System.out.println("Hola soy un carro, voy a apagarme");
+}
+}    
+
+public class Moto implements Rueda{
+    public Moto(){
+        
+    }
+    public void encender(){
+        System.out.println("Hola soy una moto, voy a encender");
+    }
+    public void correr(){
+        System.out.println("Hola soy una moto, voy a correr");
+    }
+    public void apagar(){
+        System.out.println("Hola soy una moto, voy a apagarme");
+}
+}
